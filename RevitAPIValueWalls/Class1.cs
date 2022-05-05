@@ -22,7 +22,7 @@ namespace RevitAPIValueWalls
             IList<Reference> selectedRefs = null;
             try
             {
-                selectedRefs = uidoc.Selection.PickObjects(ObjectType.Element, "Выберите элемент");
+                selectedRefs = uidoc.Selection.PickObjects(ObjectType.Edge, "Выберите элемент");
             }
             catch (Autodesk.Revit.Exceptions.OperationCanceledException)
             {
